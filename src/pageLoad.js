@@ -7,7 +7,7 @@ function initialPageLoad(){
 
     //Creates elements for DOM
     const heading = document.createElement("h1");
-    const homeImage = document.createElement("img");
+    let homeImage = document.createElement("img");
     const para1 = document.createElement("p");
     
 
@@ -18,13 +18,12 @@ function initialPageLoad(){
 
     //Home-Image
     homeImage.classList.add("background-img");
-
-    homeImage.src = "../images/cr7.jpg "; 
-    homeImage.alt = "Bearded waiter hands food to table with people";
-    homeImage.height = "100vh";
     
-    content.appendChild(homeImage);
-
+    homeImage.src = "../images/background.avif";
+    homeImage.alt = "Bearded waiter hands food to table with people";
+    
+    content.appendChild(homeImage);//Makes it a child of the content div
+    
 
     //Paragraph
     para1.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aut adipisci \n expedita modi dolores veritatis ea quisquam, molestiae voluptatem sapiente harum vero velit officiis quidem, nostrum quae minima repellendus ipsa."
