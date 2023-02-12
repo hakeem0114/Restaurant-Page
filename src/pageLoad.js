@@ -9,7 +9,7 @@ function initialPageLoad(){
      //Remove any exisiting DOM children (Prevent home children from remaining)
     content.replaceChildren();
     footer.replaceChildren(); 
-        
+
 
     //Creates elements for DOM
     const heading = document.createElement("h1");
