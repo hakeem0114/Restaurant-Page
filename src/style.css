@@ -59,9 +59,51 @@ li:hover{
 }
 
 .image{
-    width: 20rem;
-
-    display: flex;
-    flex-direction: column;
+    width: 300px;
+    border-radius: 50%;
 }
 
+.itemContainer{
+    margin-top: 2rem;
+    height: 500px;
+
+  display: grid;
+  grid-template-columns: 100px  100px 100px 100px ;
+  grid-template-rows: 100px 100px ;
+  row-gap: 100px ;
+  column-gap: 200px ;
+}
+
+.menu-para{
+    font-weight: bolder;
+    margin-left: 4rem;
+    margin-top: 5rem;
+
+}
+.home-para, .home-para2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.orderHead{
+    margin-top: 3rem;
+    font-size: 40px;
+}
+.uber, .doordash{
+    width: 150px;
+    border-radius: 5px;
+}
+
+.uber:hover, .doordash:hover{
+    transform: scale(1.05);
+}
+
+
+.orderContainer, .location{
+    padding-top: 2rem;
+    width: 100%;
+    background-color: rgb(78, 73, 73, .3);
+
+    display: flex;
+    justify-content: center;
+}

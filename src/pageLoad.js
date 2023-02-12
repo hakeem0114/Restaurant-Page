@@ -6,6 +6,11 @@ function initialPageLoad(){
     const content = document.querySelector("#content");
     const footer = document.querySelector(".footer");
 
+     //Remove any exisiting DOM children (Prevent home children from remaining)
+    content.replaceChildren();
+    footer.replaceChildren(); 
+        
+
     //Creates elements for DOM
     const heading = document.createElement("h1");
     const homeBack = document.createElement("div")
@@ -13,9 +18,6 @@ function initialPageLoad(){
     const para1 = document.createElement("p");
     const para2 = document.createElement("p");
     const footerImage =  document.createElement("img");
-    
-    //Remove any exisiting DOM children (Prevent home children from remaining)
-    content.replaceChildren();
     
 
    //Home-Image-Backdrop
@@ -34,11 +36,11 @@ function initialPageLoad(){
 
 
     //Paragraph
-    para1.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aut adipisci expedita modi dolores veritatis ea quisquam"
+    para1.innerHTML = "We're in the business of feeding people, and we're out to change what that means by connecting the neighborhood <br /> to a dining experience similar to ingredients get combined with food."
     para1.classList.add("home-para");
     content.appendChild(para1);    
     
-    para2.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aut adipisci expedita modi dolores veritatis ea quisquam"
+    para2.textContent = "Feel free to try our main dishes & enjoy the free wifi on us!"
     para2.classList.add("home-para2");
     content.appendChild(para2); 
 
@@ -49,7 +51,6 @@ function initialPageLoad(){
     footer.appendChild(footerImage);//Makes it a child of the footer div
     footerImage.addEventListener("click", ()=>{
         window.open("https://github.com/hakeem0114/Restaurant-Page","_blank")
-        console.log("check")
     })
 }
 

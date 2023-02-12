@@ -1,5 +1,6 @@
 import { initialPageLoad } from "./pageLoad.js";
 import { menuPage } from "./menu.js";
+import { contactPage } from "./contact.js";
 
 initialPageLoad(); //Page On Load
 
@@ -15,8 +16,8 @@ let tabSwitch  = (function(){
     homePage.addEventListener("click", initialPageLoad);
 
 
-    const contactPage = document.querySelector(".contact");
-    homePage.addEventListener("click", initialPageLoad);
+    const contact1 = document.querySelector(".contact");
+    contact1.addEventListener("click", contactPage);
 
 })(); //Self executing anonymoous function 
 
