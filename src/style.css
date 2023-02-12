@@ -10,7 +10,6 @@ body{
     background-image: url(../images/background.avif);
     background-size: cover;
     background-repeat: no-repeat;
-
     color: antiquewhite;
 
     display: grid;
@@ -58,3 +57,11 @@ body{
 li:hover{
     transform: scale(1.05);
 }
+
+.image{
+    width: 20rem;
+
+    display: flex;
+    flex-direction: column;
+}
+

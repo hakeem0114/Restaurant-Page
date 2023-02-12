@@ -14,6 +14,9 @@ function initialPageLoad(){
     const para2 = document.createElement("p");
     const footerImage =  document.createElement("img");
     
+    //Remove any exisiting DOM children (Prevent home children from remaining)
+    content.replaceChildren();
+    
 
    //Home-Image-Backdrop
    homeBack.style.backgroundColor = "rgba(88, 66, 66, 0.3)";
@@ -44,6 +47,10 @@ function initialPageLoad(){
     footerImage.classList.add("footerImage");
     footerImage.src = "../images/git.svg"
     footer.appendChild(footerImage);//Makes it a child of the footer div
+    footerImage.addEventListener("click", ()=>{
+        window.open("https://github.com/hakeem0114/Restaurant-Page","_blank")
+        console.log("check")
+    })
 }
 
 export{
